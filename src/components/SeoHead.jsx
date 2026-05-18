@@ -123,9 +123,13 @@ export default function SeoHead() {
       } else if (pathname === '/adt') {
         const formattedType = type
           ? type.charAt(0).toUpperCase() + type.slice(1)
-          : ''
-        title = `${formattedType} Operations Comparison | AlgoScope`
-        description = `Compare different operations and implementation patterns for ${formattedType} data structures side-by-side.`
+          : 'Data Structure'
+
+        title = `${formattedType} Comparison | AlgoScope`
+
+        description = `Compare different operations and implementation patterns for ${
+          formattedType === 'Data Structure' ? 'various' : formattedType
+        } data structures side-by-side.`
       }
     }
     // Algorithm-specific logic (Solo Mode or specific algo)
