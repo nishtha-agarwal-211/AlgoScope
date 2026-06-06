@@ -68,7 +68,12 @@ if (PUBLISHABLE_KEY) {
             },
 
             formFieldLabel: {
-              color: 'var(--clerk-text)',
+            color: 'var(--clerk-text)',
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              flexWrap: 'nowrap',
+              gap: '0.25rem',
             },
 
             headerTitle: {
